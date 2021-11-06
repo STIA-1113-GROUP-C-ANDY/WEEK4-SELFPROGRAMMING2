@@ -1,0 +1,58 @@
+package selfprogramming2;
+
+public class Power {
+	//The Math.pow(x,y) method in java is use to calculate a number raise to the power of some other number
+	//accepts two parameters and returns the value of first parameter raised to second parameter.
+	//special case as listed below:
+		//if the second parameter is positive or negative zero then the result will be 1.0
+		//if the second parameter is 1.0 then the result will be same as that of the first parameter
+		//if the second parameter is NaN then the result will also be NaN
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Example 1: To show working of this method
+		String Example1;
+		double a = 30;
+		double b = 2;
+		
+		System.out.println("Example 1");
+		
+		System.out.println(Math.pow(a, b));
+		
+		a = 3;
+		b = 4;
+		
+		System.out.println(Math.pow(a, b));
+		
+		a = 2;
+		b = 6;
+		System.out.println(Math.pow(a, b));
+		
+		//Example 2: To show working of this method when argument is NaN.
+		String Example2;
+		
+		double nan = Double.NaN;
+		double result;
+		
+		//Here second argument is NaN.
+		//output will be NaN
+		
+		System.out.println("Example 2");
+		
+		result = Math.pow(2, nan);
+		System.out.println(result);
+		
+		//Here second argument is zero
+		result = Math.pow(1254, 0);
+		System.out.println(result);
+		
+		//Here second argument is one.
+		result = Math.pow(5, 1);
+		System.out.println(result);
+		
+		
+		
+		
+	}
+
+}
