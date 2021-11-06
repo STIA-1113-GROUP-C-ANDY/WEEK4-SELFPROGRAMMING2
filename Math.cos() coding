@@ -1,0 +1,40 @@
+package selfprogramming2;
+
+public class Mathcos {
+//************************************************************************************************
+//                                       Math.cos(x)
+//************************************************************************************************
+	//Description:
+	//return the trigonometric cosine of an angle.
+	//Special Cases:
+		//If the argument is NaN or an infinity, then the result is NaN.
+	//The computed result must be within 1 ulp of the exact result. Result must be semi-monotonic
+	
+	//Declaration
+	//Following is the declaration for Math.sin() method
+	//Parameter:
+	//a- an angle, in radians
+	//Return value:
+	//This Method return to cosine of the argument
+	//Exception
+	//NA
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	// get two double numbers
+		double x = 45.0;
+		double y = 180.0;
+		
+	//convert them to radians
+		x = Math.toRadians(x);
+		y = Math.toRadians(y);
+		
+	//print their cosine
+		System.out.println("Math.cos(" + x + ")=" + Math.cos(x));
+		System.out.println("Math.cos(" + y + ")=" + Math.cos(y));
+		
+
+	}
+
+}
