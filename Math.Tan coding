@@ -1,0 +1,32 @@
+package selfprogramming2;
+
+public class MathTan {
+	//********************************************************************************************
+	//                                     Math.tan(x)
+	//********************************************************************************************
+	
+	//Description
+	//returns the trigonometric tangent of an angle.
+	//Special cases
+		//If the argument is NaN or an infinity, then the result is NaN.
+		//If the argument is zero, then the result is zero with the same sign as the argument.
+	//The computed result must be within 1 ulp of the exact result. Result must be semi-monotonic
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//get two double numbers
+		double x = 45;
+		double y = -180;
+		
+		//convert them in radians
+		x = Math.toRadians(x);
+		y = Math.toRadians(y);
+		
+		//print the tangent of these doubles
+		System.out.println("Math.tan(" + x + ")=" + Math.tan(x));
+		System.out.println("Math.tan(" + y + ")=" + Math.tan(y));
+		
+	}
+
+}
