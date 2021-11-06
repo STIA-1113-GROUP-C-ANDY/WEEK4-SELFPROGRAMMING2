@@ -1,0 +1,79 @@
+package selfprogramming2;
+
+public class Mathsin {
+	//********************************************************************************************
+	//                                Math.sin(x)
+	//********************************************************************************************
+	//Description
+	//returns the trigonometry sine of an angle in between 0.0 and pi.
+	//Special cases:
+		// If the argument is NaN or infinity, then the result is NaN.
+		//If the argument is zero, then the result is a zero with the same sign as the argument.
+	//The value returned will be between -1 and 1.
+
+	public static void main(String[] args) { //driver code
+		// TODO Auto-generated method stub
+		String Example1;
+		String Example2;
+		double a = 30;
+		
+		System.out.println("Example 1");
+		
+		//converting value to radians
+		double b = Math.toRadians(a);
+		
+		System.out.println(Math.sin(b));
+		
+		a = 45;
+		
+		//converting value to radians
+		b = Math.toRadians(a);
+		System.out.println(Math.sin(b));
+		
+		a = 60;
+		
+		//converting value to radians
+		b = Math.toRadians(a);
+		System.out.println(Math.sin(b));
+		
+		a = 90;
+		
+		//converting value to radians
+		b = Math.toRadians(a);
+		System.out.println(Math.sin(b));
+		
+		
+//*************************************************************************************************
+//                                        EXAMPLE 2
+//*************************************************************************************************
+		double positiveInfinity = Double.POSITIVE_INFINITY;
+		double negativeInfinity = Double.NEGATIVE_INFINITY;
+		double nan = Double.NaN;
+		double result;
+		
+		System.out.println("Example 2");
+		
+		//Here argument is negative infinity.
+		//output will be NaN
+		result = Math.sin(negativeInfinity);
+		System.out.println(result);
+		
+		//Here argument is positive infinity.
+		//output will also be NaN
+		result = Math.sin(positiveInfinity);
+		System.out.println(result);
+		
+		//Here argument is NaN.
+		//output will be NaN
+		result = Math.sin(nan);
+		System.out.println(result);
+		
+		
+		
+
+		
+		
+
+	}
+
+}
