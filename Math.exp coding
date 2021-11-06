@@ -1,0 +1,24 @@
+package selfprogramming2;
+
+public class MathexpMethod {
+	//return Euler's number e raised to the power of a double value.
+	//Special case:
+		//If the argument is NaN, the result is NaN.
+		//If the argument is positive infinity, then the results is positive infinity.
+		//If the argument is negative infinity, then the result is positive zero.
+	//The computed result must be within 1ulp of the exact result. Result must be semi-monotonic
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	//get two double numbers
+		double x = 5;
+		double y = 0.5;
+		
+	//print e raised at x and y
+		System.out.println("Math.exp(" + x +")=" + Math.exp(x));
+		System.out.println("Math.exp(" + y +")=" + Math.exp(y));
+
+	}
+
+}
