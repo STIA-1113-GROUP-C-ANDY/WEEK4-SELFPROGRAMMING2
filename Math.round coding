@@ -1,0 +1,39 @@
+package selfprogramming2;
+
+public class MathRoundMethod {
+	//*********************************************************************************************
+	//                                             Math.round
+	//*********************************************************************************************
+	
+	//Description
+	//returns the closest long to the argument.
+	//the result is rounded an integer by adding 1/2, taking the floor of the result, and casting the result to type long.
+	//Special cases
+		//If the argument is NaN, the result is 0.
+		//If the argument is negative infinity or any value less than or equal to the value of Long.MIN_VALUE, the result is equal to the value of Long.MIN_VALUE.
+		//If the argument is positive infinity or any value greater tah or equal to the value of Long.MAX_VALUE, the result is equal to the value of Long.MAX_VALUE.
+	//Declaration
+		//Parameter
+		//a -a floating-point value to be rounded to a long
+		//Return Value
+		//This method returns the value of the argument rounded to the nearest long value
+		//Exception
+		//NA
+		
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//get two double numbers
+		double x = 1654.9874;
+		double y = -9765.132;
+		
+		
+		//find the closest long for these doubles
+		System.out.println("Math.round(" + x + ")=" + Math.round(x));
+		System.out.println("Math.round(" + y + ")=" + Math.round(y ));
+		
+
+	}
+
+}
