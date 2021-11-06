@@ -1,0 +1,64 @@
+package selfprogramming2;
+
+public class DataConversion {
+
+	//*************************************************************************************
+	//                         DATA      CONVERSION
+	//*************************************************************************************
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+	//	A data can be converted to other datas and it's hierarchy
+	//	Widening hierarchy and conversion
+	//	Byte < short = char < int < long < float < double
+	//	Narowwing hierarchy and conversion
+	//	Byte > short = char > int > long > float > double
+	//	Example : an int data type can be converted to a double to widen it's range.
+		
+		//Example
+		
+		int dollars = 50;
+		double money =  dollars;
+		
+		System.out.println("The money will become dollar which is ");
+		System.out.println(dollars);
+		
+		//More example
+		
+		int cash = 500;
+		int cash2 = 205;
+		double quid = cash;
+		float quid2 = cash2;
+		double quid3 = quid + cash;
+		
+		System.out.println("The results of the calculation is ");
+		System.out.println(quid + quid2);
+		//This will be called a promotion and all the data types
+		//will all become double, since double is on top of the hierarchy
+		
+		//There is also casting, example below.
+		float ringgit = 5000;
+		short result = (short)ringgit;
+		//It can convert upwards and downwards.
+		
+		//Exercise
+		//Convert the data below to int and the float then subtract 0.50
+		byte data1 = 50;
+		double data2 = 12;
+		
+		//Answer
+		
+		double data3 = (double)data2;
+		
+		System.out.println("The answer is");
+		System.out.println(data3 + data1 - 0.50);
+		System.out.println("The answer is" + quid3);
+		
+		
+
+	}
+
+}
